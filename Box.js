@@ -4,7 +4,7 @@ class Box{
         this.body=Bodies.rectangle(x,y,width, height, {isStatic:true});
         this.width=width;
         this.height=height;
-        World.add(World, this.body);
+        World.add(world, this.body);
     }
 
     display(){
@@ -14,6 +14,7 @@ class Box{
         push();
         rectMode(CENTER);
         fill("red");
+        stroke("red");
         rect(pos.x,pos.y, this.width, this.height);
         pop();
 
